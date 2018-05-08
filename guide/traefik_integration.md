@@ -79,7 +79,7 @@ the appropriate labels.
         deploy:
             labels:
                 - traefik.port=8080
-                - traefik.frontend.rule=PathPrefix:/ui,/system,/function
+                - traefik.frontend.rule=PathPrefix:/ui,/system,/function,/async-function
                 - traefik.frontend.auth.basic=user:$$apr1$$MU....4XHRJ3. #copy/paste the contents of password.txt here
 ...
 ```
